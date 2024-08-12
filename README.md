@@ -1,5 +1,5 @@
 ## A Guide to the Parsley App
-<img src="inst/www/parsley_png.png" align="right" height="200px"/>
+<img src="www/parsley_png.png" align="right" height="200px"/>
 
 This repository houses the code for the Parsley App Guide.
 
