@@ -10,6 +10,7 @@ description: |
   A guide to using the Parsley app.
 link-citations: yes
 github-repo: ec363/parsleyapp_guide
+favicon: "favicon.ico"
 ---
 
 # About {#aboutintro}
