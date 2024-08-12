@@ -1,0 +1,16 @@
+--- 
+title: "The Parsley App Guide"
+author: "Eszter Csibra"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+url: https://ec363.github.io/parsleyapp_guide/
+cover-image: inst/www/parsley_png.png
+description: |
+  A guide to using the Parsley app.
+link-citations: yes
+github-repo: ec363/parsleyapp_guide
+---
+
+# About
+

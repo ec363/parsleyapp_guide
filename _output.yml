@@ -1,0 +1,22 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    sharing:
+      github: yes
+      twitter: null
+      linkedin: null
+      facebook: null
+      weibo: null
+      instapaper: null
+      vk: null
+    toc:
+      before: |
+        <li><a href="./">Parsley App Guide</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+      collapse: section
+    toolbar:
+      position: fixed
+  number_sections: false
+  split_by: chapter
+  toc_depth: 2
