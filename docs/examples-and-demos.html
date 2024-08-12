@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Examples and Demos | The Parsley App Guide</title>
+  <meta name="description" content="A guide to using the Parsley app." />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Examples and Demos | The Parsley App Guide" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+  <meta property="og:description" content="A guide to using the Parsley app." />
+  <meta name="github-repo" content="ec363/parsleyapp_guide" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Examples and Demos | The Parsley App Guide" />
+  
+  <meta name="twitter:description" content="A guide to using the Parsley app." />
+  <meta name="twitter:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+
+<meta name="author" content="Eszter Csibra" />
+
+
+<meta name="date" content="2024-08-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="prev" href="guide.html"/>
+<link rel="next" href="help.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Parsley App Guide</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what"><i class="fa fa-check"></i>What is a data parser?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how"><i class="fa fa-check"></i>How does it work?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who"><i class="fa fa-check"></i>Who is it for?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#which"><i class="fa fa-check"></i>Which plate readers does it work with?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#me"><i class="fa fa-check"></i>Contact</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html"><i class="fa fa-check"></i>Guide</a>
+<ul>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#guideintro"><i class="fa fa-check"></i>A Step by Step Guide to Using Parsley</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#standardexample"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#spectrumexample"><i class="fa fa-check"></i>Spectrum data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#timecourseexample"><i class="fa fa-check"></i>Timecourse data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#usesavedparser"><i class="fa fa-check"></i>Saving and Reusing Parser Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html"><i class="fa fa-check"></i>Examples and Demos</a>
+<ul>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#demointro"><i class="fa fa-check"></i>Function Demos with Example Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#standardex"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#spectrumex"><i class="fa fa-check"></i>Spectrum Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#timecourseex"><i class="fa fa-check"></i>Timecourse Data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i>Help</a>
+<ul>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#helpintro"><i class="fa fa-check"></i>Help Page</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#definitions"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#troubleshooting"><i class="fa fa-check"></i>Troubleshooting</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i>News</a>
+<ul>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#releases"><i class="fa fa-check"></i>Releases</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.1"><i class="fa fa-check"></i>Version 1.0.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.0"><i class="fa fa-check"></i>Version 1.0.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.2.0"><i class="fa fa-check"></i>Version 0.2.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.3"><i class="fa fa-check"></i>Version 0.1.3</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.2"><i class="fa fa-check"></i>Version 0.1.2</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.1"><i class="fa fa-check"></i>Version 0.1.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.0"><i class="fa fa-check"></i>Version 0.1.0</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Parsley App Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="examples-and-demos" class="section level1 hasAnchor">
+<h1>Examples and Demos<a href="examples-and-demos.html#examples-and-demos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- #### <a name="demointro"> Function Demos with Example Data </a> -->
+<!-- <br> -->
+<div id="demointro" class="section level2 unnumbered hasAnchor">
+<h2>Function Demos with Example Data<a href="examples-and-demos.html#demointro" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A wide variety of example data is provided with the app to serve as an illustration of all the data types and formats Parsley can handle, as well as to let you test the app’s functionality. This <i class="fa-solid fa-circle-play"></i> <strong>Demos</strong> section includes details of the provenance of each of the provided <strong>Example data</strong> sets and a few <strong>Demos</strong> that illustrate how to build parsers for each of these.</p>
+<!-- Demos made with app v0.1.1. -->
+<p><br></p>
+<!-- ##### <a name="standardex"> Standard Data </a> -->
+</div>
+<div id="standardex" class="section level2 hasAnchor">
+<h2>Standard Data<a href="examples-and-demos.html#standardex" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p><strong>Example data</strong></p>
+<div style="text-align: center;">
+<p><img src="www/guide_greenfluorescence_platelayout.png" width = "400"></p>
+</div>
+<p><br></p>
+<p>A dilution series of the green fluorescent small molecule fluorescein (11 dilutions) was prepared in duplicate in rows A-B of a 96-well plate, with the highest concentration on the left (A1/B1), lowest on the right (A11/B11) and with buffer blanks in column 12 (A12/B12). The other wells of the 96-well plate were left empty.</p>
+<p>This plate was measured for fluorescence intensity in the green fluorescence channel (ex. 485/20, em: 535/25), which I have called the GG2 channel, in a Tecan Spark plate reader. The first reading was at gain 40, and the second at gain 50. I have called the readings “GG2_gain40” and “GG2_gain50” respectively.</p>
+<p><a name="standarddemo"> <strong>Demo</strong> </a></p>
+<p><a href="https://youtu.be/tPG3iNgiOtM">Standard Data Demo</a></p>
+<!-- <div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tPG3iNgiOtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<br>
+works! -->
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tPG3iNgiOtM" frameborder="0" allowfullscreen loading="lazy">
+</iframe>
+</div>
+<p><br></p>
+<!-- <div style="text-align: center;">
+<iframe src="https://www.youtube.com/tPG3iNgiOtM" width="700px" height="394px" allowfullscreen loading="lazy"></iframe>
+</div>
+<br> -->
+<!-- <div style="text-align: center;">
+<iframe src="https://www.youtube-nocookie.com/tPG3iNgiOtM" width="700px" height="394px" allowfullscreen loading="lazy"></iframe>
+</div>
+<br> -->
+<!--  -->
+<!-- rel = 0 removed related videos? - fails -->
+<!-- youtube videos = 16:9 ratio. 700h -> 394 wide -->
+<!-- lazy loading only loads video if you scroll near it - not obvious whether this actually works -->
+<!-- object of type closure https://www.youtube.com/embed/vgYS-F8opgE -->
+<!-- vq=large: 480p; high quality, buffers slower
+vq=hd720: 720p; best quality, buffers slowest -->
+<p><br></p>
+<!-- ##### <a name="spectrumex"> Spectrum Data </a> -->
+</div>
+<div id="spectrumex" class="section level2 hasAnchor">
+<h2>Spectrum Data<a href="examples-and-demos.html#spectrumex" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p><strong>Example data</strong></p>
+<div style="text-align: center;">
+<p><br>
+<img src="www/guide_absorbancespectrum_platelayout.png" width = "400">
+<br></p>
+</div>
+<p>A dilution series of the green fluorescent small molecule fluorescein (11 dilutions) was prepared in duplicate in rows A-B of a 96-well plate, with the highest concentration on the left (A1/B1), lowest on the right (A11/B11) and with buffer blanks in column 12 (A12/B12). The other wells of the 96-well plate were left empty.</p>
+<p>An absorbance spectrum scan was carried out on this plate in a Tecan Spark plate reader (wavelengths 200-800nm, with an interval of 1nm).</p>
+<p><a name="spectrumdemo"> <strong>Demo</strong> </a></p>
+<p><a href="https://youtu.be/CCme-aDYyVE">Spectrum Data Demo</a></p>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CCme-aDYyVE" frameborder="0" allowfullscreen loading="lazy">
+</iframe>
+</div>
+<p><br></p>
+<p><br></p>
+<!-- ##### <a name="timecourseex"> Timecourse Data </a> -->
+</div>
+<div id="timecourseex" class="section level2 hasAnchor">
+<h2>Timecourse Data<a href="examples-and-demos.html#timecourseex" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p><strong>Example data</strong></p>
+<div style="text-align: center;">
+<p><br>
+<img src="www/guide_timecourse_platelayout.png" width = "400">
+<br></p>
+</div>
+<p>In this experiment, <em>E. coli</em> cells containing one of two fluorescent protein expression vectors (mCherry or mTagBFP2) were subjected to a titration of their transcriptional inducer (arabinose). The test plate also contained control strains containing an empty plasmid vector, and media blanks.</p>
+<p>A timecourse experiment was carried out on this plate in a Tecan Spark plate reader, with three readings (OD600, red fluorescence and blue fluorescence) taken every 30 minutes for a total duration of 16 hours.</p>
+<p><a name="timecoursedemo"> <strong>Demo</strong> </a></p>
+<p><a href="https://youtu.be/9AfOpyTv5BM">Timecourse Data Demo</a></p>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9AfOpyTv5BM" frameborder="0" allowfullscreen loading="lazy">
+</iframe>
+</div>
+<p><br></p>
+<p><br></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="guide.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="help.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": null,
+"twitter": null,
+"linkedin": null,
+"weibo": null,
+"instapaper": null,
+"vk": null,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

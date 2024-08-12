@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>The Parsley App Guide</title>
+  <meta name="description" content="A guide to using the Parsley app." />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="The Parsley App Guide" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+  <meta property="og:description" content="A guide to using the Parsley app." />
+  <meta name="github-repo" content="ec363/parsleyapp_guide" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The Parsley App Guide" />
+  
+  <meta name="twitter:description" content="A guide to using the Parsley app." />
+  <meta name="twitter:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+
+<meta name="author" content="Eszter Csibra" />
+
+
+<meta name="date" content="2024-08-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<link rel="next" href="guide.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Parsley App Guide</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what"><i class="fa fa-check"></i>What is a data parser?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how"><i class="fa fa-check"></i>How does it work?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who"><i class="fa fa-check"></i>Who is it for?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#which"><i class="fa fa-check"></i>Which plate readers does it work with?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#me"><i class="fa fa-check"></i>Contact</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html"><i class="fa fa-check"></i>Guide</a>
+<ul>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#guideintro"><i class="fa fa-check"></i>A Step by Step Guide to Using Parsley</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#standardexample"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#spectrumexample"><i class="fa fa-check"></i>Spectrum data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#timecourseexample"><i class="fa fa-check"></i>Timecourse data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#usesavedparser"><i class="fa fa-check"></i>Saving and Reusing Parser Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html"><i class="fa fa-check"></i>Examples and Demos</a>
+<ul>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#demointro"><i class="fa fa-check"></i>Function Demos with Example Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#standardex"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#spectrumex"><i class="fa fa-check"></i>Spectrum Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#timecourseex"><i class="fa fa-check"></i>Timecourse Data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i>Help</a>
+<ul>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#helpintro"><i class="fa fa-check"></i>Help Page</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#definitions"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#troubleshooting"><i class="fa fa-check"></i>Troubleshooting</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i>News</a>
+<ul>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#releases"><i class="fa fa-check"></i>Releases</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.1"><i class="fa fa-check"></i>Version 1.0.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.0"><i class="fa fa-check"></i>Version 1.0.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.2.0"><i class="fa fa-check"></i>Version 0.2.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.3"><i class="fa fa-check"></i>Version 0.1.3</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.2"><i class="fa fa-check"></i>Version 0.1.2</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.1"><i class="fa fa-check"></i>Version 0.1.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.0"><i class="fa fa-check"></i>Version 0.1.0</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Parsley App Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">The Parsley App Guide</h1>
+<p class="author"><em>Eszter Csibra</em></p>
+<p class="date"><em>2024-08-12</em></p>
+</div>
+<div id="aboutintro" class="section level1 hasAnchor">
+<h1>About<a href="index.html#aboutintro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- #### <a name="aboutintro"> Parsley is a universal plate reader data parsing application. </a> -->
+<!-- <img src="www/parsley_png.png" align="right" height="200px"/> -->
+<!-- <br> -->
+<p><strong>Parsley is a universal plate reader data parsing application.</strong> <img src="www/parsley_png.png" align="right" height="200px"/></p>
+<p>Multiwell plate readers are an important tool in the life sciences. They are frequently used to measure fluorescence, absorbance and luminescence, among other measurement types. As they are heavily used for high-throughput assays and screens, their analysis benefits from automated (programmatic) data analysis.</p>
+<p>However, most plate readers export raw data in formats that software packages cannot work with, and that do not contain the necessary metadata for downstream analysis. A necessary initial step in every analysis is therefore extracting the data, reformatting it into the correct ‘tidy’ data structure, and joining it with any required metadata: we call this process ‘parsing’.</p>
+<p>While a few parser functions for certain export formats from certain plate readers have been written, there is no generic tool that can handle data parsing from any plate reader: this is why Parsley was built.</p>
+<p>Author: Eszter Csibra<br />
+Version: 1.0.1<br />
+Release: Oct 2023</p>
+<p><br></p>
+<!-- ##### <a name="what"> What is a data parser? </a> -->
+<div id="what" class="section level2 hasAnchor">
+<h2>What is a data parser?<a href="index.html#what" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Imagine a fluorescence intensity measurement on a dilution series of fluorescein gave you the following raw data and you wanted to analyse the data using an existing software package:</p>
+<!-- This syntax works for images in markdown() fn within shiny ui, but not if you want to specify widths. -->
+<!-- works: -->
+<!-- ![](0_rawdatacsv.png) -->
+<!-- fails: displays image but also prints '{width=700px}' -->
+<!-- ![](0_rawdatacsv.png){width=700px} -->
+<p><br> <img src="www/0_rawdatacsv.png" style="width:700px;"/> <br><br></p>
+<p>In its current form, you will get errors with any software, because the data does not look like any recognisable data table object: its rows and columns have irregular meanings, some metadata is included but not helpfully positioned, and most metadata you require for your analysis is missing (eg. fluorophore, buffer, dilution, volume, etc).</p>
+<!-- A parser extracts the data values from the raw data file, along with crucial metadata such as well (ie. A1-H12), measurement channel (eg. OD600, GFP..), and if applicable, wavelength (eg. 485nm, for spectrum data) or time points (eg. 30min, for kinetic / timecourse data) into what we call Cropped Data: -->
+<p>A parser extracts the data values from the raw data file, along with crucial metadata such as wells (ie. A1-H12), readings (eg. OD600, GFP..), and if applicable, wavelengths (eg. 485nm, for spectrum data) or time points (eg. 30min, for kinetic / timecourse data) into what we call Cropped Data:</p>
+<p><img src="www/35_step5_3b_set_viewcroppeddata_croppeddataonly.png" style="width:700px;"/> <br><br></p>
+<p>..and adds relevant metadata crucial to the downstream analysis to give you Parsed Data:</p>
+<p><img src="www/37_step7_1b_parsedata_parseddataonly.png" style="width:700px;"/> <br><br></p>
+<p>Crucially, during metadata joining, the data is transformed into what is known as ‘tidy data’ format. Tidy data is of the form where every column is a variable, every row is an observation, and every cell contains a single value. In the above example, ‘wells’ is a variable, but ‘A1’ and ‘A2’ (etc) are not variables, they are instances of the ‘wells’ variable, so the Cropped Data is transformed such that the column names are no longer wells, but different fluorescence readings.</p>
+<p>This table is saved as a CSV file, which can then be used easily for downstream data analysis without requiring manual editing or tidying.</p>
+<p><br></p>
+<!-- ##### <a name="how"> How does it work? </a> -->
+</div>
+<div id="how" class="section level2 hasAnchor">
+<h2>How does it work?<a href="index.html#how" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Standard parser functions built for specific output formats work programmatically, for example they might identify the first line of data by finding the line that begins at the ‘0’ timepoint, or under the first heading starting ‘Measurement’. However, these rules are too specific to be used for a universal parser.</p>
+<!-- Parsley was developed to be as universally applicable as possible, so it makes very few assumptions about the type, orientation and size of the data. It therefore requires user-specified inputs to specify all of these parameters in turn: the type and orientation of the data, the location of  data within the export file, as well as some crucial metadata (the names of measurement channels, the order of the wells, and if applicable, the wavelengths used for spectra or the timepoints used for a timecourse). This is why it asks so many questions and is so particular about the exact response it requires!
+
+Once data extraction is complete, it labels the data with the most crucial metadata: in other words, it adds the measurement channel names as column names, and adds a column for the wells. For timecourse data, it also adds an extra column for time. -->
+<p>Parsley was developed to be as universally applicable as possible, so it makes very few assumptions about the type, orientation and size of the data. It therefore requires user-provided inputs to specify all of these parameters in turn: the type and orientation of the data, the location of data within the export file, as well as some crucial metadata (the names of readings, the order of the wells, and if applicable, the wavelengths used for spectra or the timepoints used for a timecourse). This is why it asks so many questions and is so particular about the exact response it requires!</p>
+<p>Once data extraction is complete, it labels the data with the most crucial metadata: in other words, it adds the reading names as column names, and adds a column for the wells. For timecourse data, it also adds an extra column for time.</p>
+<p>To finish, this tidy dataset is joined to user-provided metadata. The completed parsed data is then available to download as a CSV file for downstream analysis.</p>
+<p><br></p>
+<!-- ##### <a name="who"> Who is it for? </a> -->
+</div>
+<div id="who" class="section level2 hasAnchor">
+<h2>Who is it for?<a href="index.html#who" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>The principal intended user is anyone who wishes to extract and reformat data for downstream analysis but does not wish to code their own parser function. It is expected that in most cases the downstream analysis will be carried out in R, Python or similar, however parsed data can also be useful for downstream analysis in Excel.</p>
+<p>This tool is not just for those who don’t code. We have found Parsley useful when working with data from new plate readers or new data types, as it provides rapid access to tidy data without the upstream work required to write a bespoke function.</p>
+<p>It even has applications in data storage and reuse. Tidy data joined to relevant metadata is an excellent way to store research data for personal use, sharing with collaborators, or in preparation for a manuscript submission. (Metadata has an unfortunate habit of getting lost unless we bind it to data!)</p>
+<p><br></p>
+<!-- ##### <a name="which"> Which plate readers does it work with? </a> -->
+</div>
+<div id="which" class="section level2 hasAnchor">
+<h2>Which plate readers does it work with?<a href="index.html#which" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Parsley has been verified to work with the following data formats exported from the following plate readers:</p>
+<ul>
+<li><font color='18BC9C'><strong>Tecan Spark plate reader</strong> (SparkControl Magellan software)</font>
+<ul>
+<li><strong>Standard</strong> - direction horizontal/vertical, well data in rows/columns/matrixseparated/matrixXfluor</li>
+<li><strong>Spectrum</strong> - direction horizontal/vertical, well data in rows/columns/matrixseparated/matrixXfluor/matrixnested</li>
+<li><strong>Timecourse</strong> - direction horizontal/vertical, well data in rows/columns</li>
+</ul></li>
+<li><font color='18BC9C'><strong>BMG LabTech Clariostar Plus plate reader</strong> (MARS software)</font>
+<ul>
+<li><strong>Standard</strong> - default export format, -/+unused wells, -/+metadata, wellformats as A1 or A01, -/+transpose</li>
+<li><strong>Spectrum</strong> - default export format, -/+unused wells, -/+metadata, wellformats as A1 or A01, -/+transpose</li>
+<li><strong>Timecourse</strong> - default export format, -/+unused wells, -/+metadata, wellformats as A1 or A01, -/+transpose</li>
+</ul></li>
+<li><font color='18BC9C'><strong>BioTek Synergy HT plate reader</strong> (Gen5 software)</font>
+<ul>
+<li><strong>Standard</strong> - (column format)</li>
+<li><strong>Timecourse</strong> - (row format)</li>
+</ul></li>
+<li><font color='18BC9C'><strong>BioTek Synergy Neo2 plate reader</strong> (Gen5 software)</font>
+<ul>
+<li><strong>Timecourse</strong> - (row format)</li>
+</ul></li>
+<li><font color='18BC9C'><strong>Molecular Devices SpectraMax iD5 plate reader</strong></font>
+<ul>
+<li><strong>Standard</strong> - (matrix format)</li>
+</ul></li>
+<li><font color='18BC9C'><strong>Beckman Coulter BioLector Microbioreactor</strong></font>
+<ul>
+<li><strong>Timecourse</strong> - (column format)</li>
+</ul></li>
+<li><font color='18BC9C'><strong>Enzyscreen GrowthProfiler plate reader</strong></font>
+<ul>
+<li><strong>Timecourse</strong> - (row format)</li>
+</ul></li>
+<li><font color='18BC9C'><strong>Growth Curves Bioscreen plate reader</strong></font>
+<ul>
+<li><strong>Timecourse</strong> - (row format)</li>
+</ul></li>
+<li><font color='18BC9C'><strong>PerkinElmer VICTOR Nivo plate reader</strong></font>
+<ul>
+<li><strong>Timecourse</strong> - (column format)</li>
+</ul></li>
+<li><font color='18BC9C'><strong>Tecan GENios plate reader</strong></font>
+<ul>
+<li><strong>Timecourse</strong> - (row format)</li>
+</ul></li>
+</ul>
+<p>As time goes on, we hope to verify more plate reader outputs with Parsley. Please reach out if you use a different instrument and Parsley does (or does not!) work for your data exports.</p>
+<!-- Links
+https://lifesciences.tecan.com/multimode-plate-reader
+https://www.bmglabtech.com/en/clariostar-plus/
+https://www.agilent.com/en/product/microplate-instrumentation/microplate-readers/multimode-microplate-readers/biotek-synergy-h1-multimode-reader-1623193
+https://www.moleculardevices.com/products/microplate-readers/multi-mode-readers
+ -->
+<p><br></p>
+<!-- ##### <a name="me"> Contact </a> -->
+</div>
+<div id="me" class="section level2 hasAnchor">
+<h2>Contact<a href="index.html#me" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Questions, suggestions or bug reports? Please <a href="mailto:e.csibra@leeds.ac.uk">contact me</a>.</p>
+<p><br></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="guide.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": null,
+"twitter": null,
+"linkedin": null,
+"weibo": null,
+"instapaper": null,
+"vk": null,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

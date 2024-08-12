@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Help | The Parsley App Guide</title>
+  <meta name="description" content="A guide to using the Parsley app." />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Help | The Parsley App Guide" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+  <meta property="og:description" content="A guide to using the Parsley app." />
+  <meta name="github-repo" content="ec363/parsleyapp_guide" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Help | The Parsley App Guide" />
+  
+  <meta name="twitter:description" content="A guide to using the Parsley app." />
+  <meta name="twitter:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+
+<meta name="author" content="Eszter Csibra" />
+
+
+<meta name="date" content="2024-08-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="prev" href="examples-and-demos.html"/>
+<link rel="next" href="news.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Parsley App Guide</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what"><i class="fa fa-check"></i>What is a data parser?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how"><i class="fa fa-check"></i>How does it work?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who"><i class="fa fa-check"></i>Who is it for?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#which"><i class="fa fa-check"></i>Which plate readers does it work with?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#me"><i class="fa fa-check"></i>Contact</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html"><i class="fa fa-check"></i>Guide</a>
+<ul>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#guideintro"><i class="fa fa-check"></i>A Step by Step Guide to Using Parsley</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#standardexample"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#spectrumexample"><i class="fa fa-check"></i>Spectrum data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#timecourseexample"><i class="fa fa-check"></i>Timecourse data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#usesavedparser"><i class="fa fa-check"></i>Saving and Reusing Parser Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html"><i class="fa fa-check"></i>Examples and Demos</a>
+<ul>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#demointro"><i class="fa fa-check"></i>Function Demos with Example Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#standardex"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#spectrumex"><i class="fa fa-check"></i>Spectrum Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#timecourseex"><i class="fa fa-check"></i>Timecourse Data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i>Help</a>
+<ul>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#helpintro"><i class="fa fa-check"></i>Help Page</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#definitions"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#troubleshooting"><i class="fa fa-check"></i>Troubleshooting</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i>News</a>
+<ul>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#releases"><i class="fa fa-check"></i>Releases</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.1"><i class="fa fa-check"></i>Version 1.0.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.0"><i class="fa fa-check"></i>Version 1.0.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.2.0"><i class="fa fa-check"></i>Version 0.2.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.3"><i class="fa fa-check"></i>Version 0.1.3</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.2"><i class="fa fa-check"></i>Version 0.1.2</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.1"><i class="fa fa-check"></i>Version 0.1.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.0"><i class="fa fa-check"></i>Version 0.1.0</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Parsley App Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="help" class="section level1 hasAnchor">
+<h1>Help<a href="help.html#help" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- #### <a name="helpintro"> Help Page </a> -->
+<!-- <br> -->
+<div id="helpintro" class="section level2 unnumbered hasAnchor">
+<h2>Help Page<a href="help.html#helpintro" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This <i class="fa-solid fa-circle-question"></i> <strong>Help</strong> page includes <strong>Troubleshooting</strong> tips to solve common problems as well as more details about the <strong>Error messages</strong> you might come across while using Parsley. If this page doesn’t solve your problem, consult the <i class="fa-solid fa-map"></i> <strong>Guide</strong> tab, which contains a step by step walk through of how to use Parsley.</p>
+<p><br></p>
+<!-- ##### <a name="definitions"> Definitions </a> -->
+</div>
+<div id="definitions" class="section level2 hasAnchor">
+<h2>Definitions<a href="help.html#definitions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p><strong>Reading</strong></p>
+<p>Throughout Parsley, we use the term ‘Reading’ to refer to a <em>type</em> of measurement that is taken <em>for an entire plate</em>. Note, however that we are not referring to a reading of <em>one well</em>, but a reading of <em>every well of an entire plate</em>.</p>
+<p>For instance, you might run a timecourse assay using a plate reader in which you take a ‘green’ fluorescence intensity measurement (to detect GFP), a ‘red’ fluorescence measurement (to detect RFP) and an absorbance measurement at 600nm, of your entire 96-well plate at regular intervals. We might refer to these then as the first, second and third Readings, respectively. The names you give these Readings might then relate to the target molecule, eg. ‘GFP, RFP, cells’, or they might refer to the filter sets used, eg. ‘green, red, OD600’ or ‘GG2, RR1, OD600’. Most of the time, you will only take one Reading with any one filter set, which means you can call a Reading by the name of that filter set. Calibrations with the FPCountR framework are an exception to this, as they require several Readings in the same filter set across a range of gains. In this case, you will need the names for each distinct Reading to differ so you can distinguish them: you can’t call them ‘GG2, GG2, GG2..’, but you might consider ‘GG2_gain40, GG2_gain50, GG2_gain60’ etc.</p>
+<p>For a given Reading, there should only be 1 value for any given well at any given timepoint.</p>
+<ul>
+<li>For a given well, Standard Mode data only has 1 value for any given Reading. (For Standard Mode data with 12 wells and 1 Reading (OD600), the app will expect 12 data points.)</li>
+<li>For a given well, Timecourse data only has 1 value for any given Reading and time point. (For Timecourse Mode data with 12 wells, 1 Reading (OD600), and 10 time points, the app will expect 120 data points.)</li>
+<li>It is assumed that all Spectrum data only consists of one spectrum, and that no plate reader would permit export of spectrum data next to non-spectrum data in the same file. But wavelengths in Spectrum data are treated as separate Readings (because Spectrum data is effectively a series of absorbance readings at a range of wavelengths). So for a given well, Spectrum data only has 1 value for any given wavelength (aka Reading). (For Spectrum Mode data with 12 wells and 800 wavelengths (= Readings), the app will expect 9600 data points.)</li>
+</ul>
+<p><br></p>
+<!-- ##### <a name="troubleshooting"> Troubleshooting </a> -->
+</div>
+<div id="troubleshooting" class="section level2 hasAnchor">
+<h2>Troubleshooting<a href="help.html#troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p><strong>Data files are not uploading</strong></p>
+<p>Check if an ‘Uploaded file name’ box has appeared beneath the Submit button. If it did not, you did not select a file with Browse. If a file name appears, check it is the right file. Wait a few seconds, as large files can take a few seconds to load, and large Excel files can be especially slow. We recommend saving Excel format files as CSV files before upload, particularly if you encounter unexpected issues.</p>
+<p>Allowed file formats are .csv, .tsv, .txt, .xlsx, or .xls. Make sure you have selected an appropriate file and selected the correct file type for the selected file.</p>
+<p>If you are using CSV format files, and still see no Raw Data, the most common problem is that your CSV file may not end with a new empty line. Open the file in a text editor, put your cursor to the right end of the last line and hit Return. Save the file and try again.</p>
+<p><strong>How do I create a metadata file?</strong></p>
+<p>Create a new spreadsheet with Excel or similar. Create a column called ‘well’ (copy/paste this exactly, similar column names will cause an error). Fill this column with ‘A1’ to ‘H12’, or as many of these as you need. Add as many other columns as you need to describe the contents of each well. Save the file as a CSV.</p>
+<p><strong>Data has been reordered due to clicking on column names in Raw Data tab</strong></p>
+<p>This cannot be undone, unfortunately. Reload the page and start again.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages00"> Error messages: Data upload errors </a> -->
+<div id="errormessages00" class="section level3 hasAnchor">
+<h3>Error messages: Data upload errors<a href="help.html#errormessages00" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: File extension needs to be one of the following: ‘csv’, ‘tsv’, ‘txt’, ‘xls’, ‘xlsx’.</strong></p>
+<p>The selected file does not have an extension corresponding to the appropriate file types. Select another file or save the file in an appropriate format.</p>
+<p><strong>Error: Ensure that the specified file type matches uploaded file’s extension.</strong></p>
+<p>The selected file has an extension that doesn’t match the file type selected from the ‘File type’ menu: perhaps you selected a ‘.xlsx’ file but the File type menu is set to ‘CSV’?</p>
+<p><br></p>
+<!-- ##### <a name="errormessages0"> Error messages: Generic errors </a> -->
+</div>
+<div id="errormessages0" class="section level3 hasAnchor">
+<h3>Error messages: Generic errors<a href="help.html#errormessages0" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: Section marked complete.</strong></p>
+<p>The section whose values you are trying to change are marked complete. To undo this and update the section, unclick the lock icon.</p>
+<p><strong>Error: Section X/Previous sections marked incomplete.</strong></p>
+<p>There is an order to the Data Specifications that needs to be followed. Check that Section X has been completed (with ‘View’ or ‘Data Specifications’ tab). If it has, click the Lock icon next to the Section X ‘Set’ button to mark it as complete before moving on to the next section.</p>
+<p><strong>Error: Select values/cells first.</strong></p>
+<p>Use the mouse to select cells in the Raw Data table to complete this section, before clicking ‘Set’.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages1"> Error messages for Step 1: Data format </a> -->
+</div>
+<div id="errormessages1" class="section level3 hasAnchor">
+<h3>Error messages for Step 1: Data format<a href="help.html#errormessages1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: Spectrum data must be provided in row or column format.</strong></p>
+<p>Parsley cannot handle spectrum data in matrix format.</p>
+<p><strong>Error: Timecourse data must be provided in row or column format.</strong></p>
+<p>Parsley cannot handle timecourse data in matrix format.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages2"> Error messages for Step 2: Reading names </a> -->
+</div>
+<div id="errormessages2" class="section level3 hasAnchor">
+<h3>Error messages for Step 2: Reading names<a href="help.html#errormessages2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<!-- **Error: Select channel names input method.**
+
+Select an option under the 'Channel names specification' dropdown.
+ -->
+<p><strong>Error: Select reading names input method.</strong></p>
+<p>Select an option under the ‘Reading names specification’ dropdown.</p>
+<!-- **Error: Number of channel names does not match number of measurement channels specified.** -->
+<!-- If you have stated there are X channels, you must either a) select X cells to correspond to the channel names (if you selected 'Select cells with channel names') or b) input X channel names (if you selected 'Enter channel names manually'). -->
+<p><strong>Error: Number of reading names does not match number of readings specified.</strong></p>
+<p>If you have stated there are X readings, you must either a) select X cells to correspond to the readings names (if you selected ‘Select cells with reading names’) or b) input X reading names (if you selected ‘Enter reading names manually’).</p>
+<!-- **Error: Channel name selection cannot contain empty cells.** -->
+<p><strong>Error: Reading name selection cannot contain empty cells.</strong></p>
+<p>Selected cell contents will become column names. Column names cannot be blank!</p>
+<p><strong>Error: Reading names must be unique.</strong></p>
+<p>Selected cells or manually entered reading names contain duplicates, which isn’t tolerated. Please specify a list of unique reading names.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages2b"> Error messages for Step 2b: Timecourse settings </a> -->
+</div>
+<div id="errormessages2b" class="section level3 hasAnchor">
+<h3>Error messages for Step 2b: Timecourse settings<a href="help.html#errormessages2b" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: Select two cells.</strong><br />
+<strong>Error: Select only 1 row/column.</strong><br />
+<strong>Error: Timepoint selection cannot contain empty cells.</strong></p>
+<p>Check you have selected the correct cells. The selection needs to be exactly two cells - in the same row for column format data, or in the same column for row format data - and none of the cells between the two selected ones can be empty.</p>
+<p>If you are certain the selected cells are correct, check if you don’t still have cells selected from Step 2. These need to be unselected. They can be easy to forget about or miss, particularly with large file uploads.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages3"> Error messages for Step 3: Data from first reading </a> -->
+</div>
+<div id="errormessages3" class="section level3 hasAnchor">
+<h3>Error messages for Step 3: Data from first reading<a href="help.html#errormessages3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: Select two cells.</strong><br />
+<strong>Error: Select only 1 row/column.</strong><br />
+<strong>Error: Select an 8 by 12 matrix.</strong></p>
+<p>Check you have selected the correct cells. For matrix data, Parsley looks for an 8 row by 12 column matrix and flags an error when you select cells with different spacing.</p>
+<p>If you are certain the selected cells are correct, check if you don’t still have cells selected from Step 2. These need to be unselected. They can be easy to forget about or miss, particularly with large file uploads.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages4"> Error messages for Step 4: Total data </a> -->
+</div>
+<div id="errormessages4" class="section level3 hasAnchor">
+<h3>Error messages for Step 4: Total data<a href="help.html#errormessages4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<!-- **Error: Add first channel data to Section 3 first.** -->
+<p><strong>Error: Add first reading data to Section 3 first.</strong></p>
+<p>Section 3 has been marked complete (Lock icon) without being completed.</p>
+<!-- **Error: Channel number must be an integer of 1 or more.** -->
+<p><strong>Error: Reading number must be an integer of 1 or more.</strong></p>
+<p>Though the numeric input box accepts fractions, the app does not.</p>
+<p><strong>Error: Do not request data from outside range of file.</strong></p>
+<!-- You have requested row or column numbers that do not exist in your data. The details within the error message should help fix the problem. Probably the channel spacing number is too high. -->
+<p>You have requested row or column numbers that do not exist in your data. The details within the error message should help fix the problem. Probably the number entered for the spacing between readings is too high.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages5"> Error messages for Step 5: Well numbering </a> -->
+</div>
+<div id="errormessages5" class="section level3 hasAnchor">
+<h3>Error messages for Step 5: Well numbering<a href="help.html#errormessages5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: Matrix format requires Starting Well = ‘A1’.</strong></p>
+<p>Matrix format assumes all wells are represented from ‘A1’ to ‘H12’.</p>
+<p><strong>Error: Select two cells.</strong><br />
+<strong>Error: Select only 1 row/column.</strong><br />
+<strong>Error: Number of selected wells does not match the number of columns/rows of selected data.</strong></p>
+<!-- Custom well numbering: This works like the 'Data from first measurement channel' section. Check cell selections from earlier steps have been unclicked. -->
+<p>Custom well numbering: This works like the ‘Data from first reading’ section. Check cell selections from earlier steps have been unclicked.</p>
+<p>If the data is in ‘rows’, Parsley expected the well names to be arranged in a row and the number of columns to match that of the data.</p>
+<p>If the data is in ‘columns’, Parsley expected the well names to be arranged in a column and the number of rows to match that of the data.</p>
+<p><strong>Error: Well name selection cannot contain empty cells.</strong></p>
+<p>Custom well numbering: every sample must have a non-empty ‘well’ value or data will be lost during parsing.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages7"> Error messages for Step 7: Parse data </a> -->
+</div>
+<div id="errormessages7" class="section level3 hasAnchor">
+<h3>Error messages for Step 7: Parse data<a href="help.html#errormessages7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: Can’t merge Data and tidy Metadata if Metadata does not contain a ‘well’ column. Verify that the Metadata is in tidy format. If so, add a ‘well’ column. If it is in matrix format, select ‘Matrix format’ in the Metadata upload section above, click Submit to reupload the Metadata, before retrying the Parsing.</strong></p>
+<p>Check that the metadata file was uploaded correctly.</p>
+<p>If you uploaded Tidy format Metadata, it needs to contain a column labelled ‘well’. Check that Parsley has correctly interpreted that ‘well’ is the column name: column names will appear in bold at the top. If it is displayed further down, edit the CSV file so that the column names are the first line of the spreadsheet.</p>
+<p>If you uploaded Matrix format Metadata, this error has come up because you selected ‘Tidy format’ under the Metadata format menu. Select ‘Matrix format’ instead, press Submit to re-upload the Metadata correctly, and retry the Parse step.</p>
+<p><br></p>
+<!-- ##### <a name="errormessages8"> Error messages: Use Saved Parser Tab </a> -->
+</div>
+<div id="errormessages8" class="section level3 hasAnchor">
+<h3>Error messages: Use Saved Parser Tab<a href="help.html#errormessages8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<p><strong>Error: Parser missing. Upload a saved parser or build one before proceeding.</strong></p>
+<p>The parser you are trying to load is missing. A common cause of this error is selecting ‘Use current parser’ when one hasn’t yet been completed in the Build Your Own Parser tab. Did you mean to upload a saved .RDS file? Choose ‘Upload saved parser’.</p>
+<p><strong>Error: Parser incomplete. If the parser was not created with a recent version of Parsley, remake the parser.</strong></p>
+<p>Parsley has detected a faulty parser function. This may be because the parser was built with an out of date version of Parsley. Remake the parser to fix this issue.</p>
+<p><strong>Error: Parser file could not be uploaded. Check that it is a .RDS file created with Parsley.</strong><br />
+<strong>Error: The file extension for a parser need to be ‘RDS’.</strong></p>
+<p>An error occurred while reading an uploaded file. The file may not be in the correct .RDS format. Are you sure you are uploading a parser function file made by Parsley?</p>
+<p><strong>Error: Upload a raw data file</strong><br />
+<strong>Error: Upload a metadata file</strong></p>
+<p>Parsing cannot proceed without a raw data file and metadata file.</p>
+<p><br></p>
+<!-- ##### <a name="warningmessages"> Warning messages for Step 2b: Timecourse settings </a> -->
+</div>
+<div id="warningmessages" class="section level3 hasAnchor">
+<h3>Warning messages for Step 2b: Timecourse settings<a href="help.html#warningmessages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr>
+<blockquote>
+<p>Warnings are not errors. They do not prevent you proceeding or require you to change your inputs.</p>
+</blockquote>
+<p><strong>Warning: Fewer expected timepoints than calculated timepoints.</strong><br />
+<strong>Warning: More expected timepoints than calculated timepoints.</strong></p>
+<p>This is a notification that Parsley has identified a mismatch between (i) the ‘intuitive’ calculation that the list of timepoints must start from the ‘first timepoint’ and carry on every interval until the ‘duration’ timepoint, and (ii) the list of timepoints calculated from the ‘first timepoint’ and the ‘expected timepoint number’.</p>
+<p>For example, if the inputs had been: {first timepoint: 0, interval: 30, duration: 960, expected timepoint number: 32}, then the ‘intuitive’ calculation gives the list: {0, 30, … 960}, whereas the ‘expected’ calculation gives: {0, 30, … 930}. In case of a mismatch, Parsley chooses the shorter of the two lists, and presents a warning confirming the final list. You can then verify if this is the correct list. If it is, you can proceed. If it isn’t, you can correct the inputs.</p>
+<p>More details about these calculations are given in the Guide section.</p>
+<p><br></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="examples-and-demos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="news.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": null,
+"twitter": null,
+"linkedin": null,
+"weibo": null,
+"instapaper": null,
+"vk": null,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

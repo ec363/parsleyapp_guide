@@ -3,3 +3,4 @@ delete_merged_file: true
   # ui:
     # chapter_name: "Chapter "
 repo: https://github.com/ec363/parsleyapp_guide
+output_dir: "docs"
