@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>News | The Parsley App Guide</title>
+  <meta name="description" content="A guide to using the Parsley app." />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="News | The Parsley App Guide" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+  <meta property="og:description" content="A guide to using the Parsley app." />
+  <meta name="github-repo" content="ec363/parsleyapp_guide" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="News | The Parsley App Guide" />
+  
+  <meta name="twitter:description" content="A guide to using the Parsley app." />
+  <meta name="twitter:image" content="https://ec363.github.io/parsleyapp_guide/www/parsley_png.png" />
+
+<meta name="author" content="Eszter Csibra" />
+
+
+<meta name="date" content="2024-08-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="prev" href="help.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Parsley App Guide</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what"><i class="fa fa-check"></i>What is a data parser?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how"><i class="fa fa-check"></i>How does it work?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who"><i class="fa fa-check"></i>Who is it for?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#which"><i class="fa fa-check"></i>Which plate readers does it work with?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#me"><i class="fa fa-check"></i>Contact</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html"><i class="fa fa-check"></i>Guide</a>
+<ul>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#guideintro"><i class="fa fa-check"></i>A Step by Step Guide to Using Parsley</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#standardexample"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#spectrumexample"><i class="fa fa-check"></i>Spectrum data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#timecourseexample"><i class="fa fa-check"></i>Timecourse data</a></li>
+<li class="chapter" data-level="" data-path="guide.html"><a href="guide.html#usesavedparser"><i class="fa fa-check"></i>Saving and Reusing Parser Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html"><i class="fa fa-check"></i>Examples and Demos</a>
+<ul>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#demointro"><i class="fa fa-check"></i>Function Demos with Example Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#standardex"><i class="fa fa-check"></i>Standard Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#spectrumex"><i class="fa fa-check"></i>Spectrum Data</a></li>
+<li class="chapter" data-level="" data-path="examples-and-demos.html"><a href="examples-and-demos.html#timecourseex"><i class="fa fa-check"></i>Timecourse Data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i>Help</a>
+<ul>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#helpintro"><i class="fa fa-check"></i>Help Page</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#definitions"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="help.html"><a href="help.html#troubleshooting"><i class="fa fa-check"></i>Troubleshooting</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i>News</a>
+<ul>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#releases"><i class="fa fa-check"></i>Releases</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.1"><i class="fa fa-check"></i>Version 1.0.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.0"><i class="fa fa-check"></i>Version 1.0.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.2.0"><i class="fa fa-check"></i>Version 0.2.0</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.3"><i class="fa fa-check"></i>Version 0.1.3</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.2"><i class="fa fa-check"></i>Version 0.1.2</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.1"><i class="fa fa-check"></i>Version 0.1.1</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.1.0"><i class="fa fa-check"></i>Version 0.1.0</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Parsley App Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="news" class="section level1 hasAnchor">
+<h1>News<a href="news.html#news" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="releases" class="section level2 unnumbered hasAnchor">
+<h2>Releases<a href="news.html#releases" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<!-- ##### <a name="1.0.1"> Version 1.0.1 </a> -->
+</div>
+<div id="id_1.0.1" class="section level2 hasAnchor">
+<h2>Version 1.0.1<a href="news.html#id_1.0.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Release: Oct 2023</p>
+<ul>
+<li>Bug fixes.
+<ul>
+<li>Added error handling to catch issues in step 2 (reading names specification), that previously caused the app to crash during step 5 (well numbering).</li>
+</ul></li>
+<li>Documentation updates.
+<ul>
+<li>Help tab: Updated error messages.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<!-- ##### <a name="1.0.0"> Version 1.0.0 </a> -->
+</div>
+<div id="id_1.0.0" class="section level2 hasAnchor">
+<h2>Version 1.0.0<a href="news.html#id_1.0.0" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Release: Oct 2023</p>
+<ul>
+<li>Major improvements to functionality.
+<ul>
+<li>Added ability to download built parsers, and upload them for quick parsing of similar plate reader files. Parsing new data files now only requires (i) uploading a saved parser function, along with new raw data and metadata, and (ii) clicking a ‘Run Parser’ button. Example parsers are also provided for all example data types.</li>
+</ul></li>
+<li>Major UI updates.
+<ul>
+<li>Added section for saving and downloading parser at the bottom of the Build Your Own Parser tab.</li>
+<li>Added Use Saved Parser tab for handling uploaded parsers. This tab is laid out similarly to the first tab, with the addition of a Parser Function tab that includes a complete description of the loaded parser function.</li>
+</ul></li>
+<li>Documentation updates.
+<ul>
+<li>Updated Guide and Help pages about new functionality.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<!-- ##### <a name="0.2.0"> Version 0.2.0 </a> -->
+</div>
+<div id="id_0.2.0" class="section level2 hasAnchor">
+<h2>Version 0.2.0<a href="news.html#id_0.2.0" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Release: Oct 2023</p>
+<ul>
+<li>Improvements to functionality.
+<ul>
+<li>Added ability to upload files in Excel format.</li>
+<li>Removed requirement for units to be in minutes.</li>
+<li>Added ability to grab timepoints by selecting these directly from the data.</li>
+<li>Added ability to upload metadata files in matrix format (including a new example file).</li>
+</ul></li>
+<li>Bug fixes
+<ul>
+<li>Added error handling to catch issues with the data/metadata upload step that previously caused the app to crash.</li>
+</ul></li>
+<li>Minor UI updates.
+<ul>
+<li>Added row numbers to most tables.</li>
+</ul></li>
+<li>Updates to the documentation.
+<ul>
+<li>Updated Guide and Help pages about new functionality.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<!-- ##### <a name="0.1.3"> Version 0.1.3 </a> -->
+</div>
+<div id="id_0.1.3" class="section level2 hasAnchor">
+<h2>Version 0.1.3<a href="news.html#id_0.1.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Release: Jun 2023</p>
+<ul>
+<li>Minor improvements to functionality.
+<ul>
+<li>Updated file handling checks to restrict uploaded files to compatible file types.</li>
+</ul></li>
+<li>Minor wording corrections in the documentation.</li>
+</ul>
+<p><br></p>
+<!-- ##### <a name="0.1.2"> Version 0.1.2 </a> -->
+</div>
+<div id="id_0.1.2" class="section level2 hasAnchor">
+<h2>Version 0.1.2<a href="news.html#id_0.1.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Release: May 2023</p>
+<ul>
+<li>Minor improvements to functionality.
+<ul>
+<li>Added ability to skip addition of metadata to allow data extraction + tidying without metadata joining.</li>
+<li>Expanded data import from comma-separated value (CSV) format only to data that is delimited by semi-colons or tabs (tab-separated data, or .tsv).</li>
+<li>Removed requirement for ‘custom’ well list to include a well in ‘A1’/‘H12’ format.</li>
+</ul></li>
+<li>Minor wording changes in BYOP tab.</li>
+<li>Minor documentation updates.
+<ul>
+<li>About tab: Instrument compatibility section expanded.</li>
+<li>Guide tab: Updated guide to incorporate recent changes.</li>
+<li>Help tab: Updated error messages.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<!-- ##### <a name="0.1.1"> Version 0.1.1 </a> -->
+</div>
+<div id="id_0.1.1" class="section level2 hasAnchor">
+<h2>Version 0.1.1<a href="news.html#id_0.1.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Release: May 2023</p>
+<ul>
+<li>No changes in app functionality.</li>
+<li>Minor UI and wording changes to the app.</li>
+<li>Minor changes to Example Data, which have been simplified.</li>
+<li>Major documentation updates.
+<ul>
+<li>Guide refined and updated. Diagrams added. Sections on Spectrum and Timecourse added. Notation changed from ‘Channel’ to ‘Reading’.</li>
+<li>Help page: Updated Definitions.</li>
+<li>About tab: Instrument compatibility section added.</li>
+<li>Demos tab added, with example data details and demo screen recordings.</li>
+<li>News tab added.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<!-- ##### <a name="0.1.0"> Version 0.1.0 </a> -->
+</div>
+<div id="id_0.1.0" class="section level2 hasAnchor">
+<h2>Version 0.1.0<a href="news.html#id_0.1.0" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr>
+<p>Release: April 2023</p>
+<p>Initial release of Parsley.</p>
+<p><br></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="help.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": null,
+"twitter": null,
+"linkedin": null,
+"weibo": null,
+"instapaper": null,
+"vk": null,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
