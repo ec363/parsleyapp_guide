@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>The Parsley App Guide</title>
   <meta name="description" content="A guide to using the Parsley app." />
-  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="The Parsley App Guide" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Eszter Csibra" />
 
 
-<meta name="date" content="2024-08-13" />
+<meta name="date" content="2024-10-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -108,6 +108,7 @@
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i>News</a>
 <ul>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#releases"><i class="fa fa-check"></i>Releases</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.1.0"><i class="fa fa-check"></i>Version 1.1.0</a></li>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.1"><i class="fa fa-check"></i>Version 1.0.1</a></li>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.0"><i class="fa fa-check"></i>Version 1.0.0</a></li>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.2.0"><i class="fa fa-check"></i>Version 0.2.0</a></li>
@@ -139,7 +140,7 @@
 <div id="header">
 <h1 class="title">The Parsley App Guide</h1>
 <p class="author"><em>Eszter Csibra</em></p>
-<p class="date"><em>2024-08-13</em></p>
+<p class="date"><em>2024-10-16</em></p>
 </div>
 <div id="aboutintro" class="section level1 hasAnchor">
 <h1>About<a href="index.html#aboutintro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -151,8 +152,8 @@
 <p>However, most plate readers export raw data in formats that software packages cannot work with, and that do not contain the necessary metadata for downstream analysis. A necessary initial step in every analysis is therefore extracting the data, reformatting it into the correct ‘tidy’ data structure, and joining it with any required metadata: we call this process ‘parsing’.</p>
 <p>While a few parser functions for certain export formats from certain plate readers have been written, there is no generic tool that can handle data parsing from any plate reader: this is why Parsley was built.</p>
 <p>Author: Eszter Csibra<br />
-Version: 1.0.1<br />
-Release: Oct 2023</p>
+Version: 1.1.0<br />
+Release: Oct 2024</p>
 <p><br></p>
 <!-- ##### <a name="what"> What is a data parser? </a> -->
 <div id="what" class="section level2 hasAnchor">
@@ -203,11 +204,17 @@ Once data extraction is complete, it labels the data with the most crucial metad
 <hr>
 <p>Parsley has been verified to work with the following data formats exported from the following plate readers:</p>
 <ul>
-<li><font color='18BC9C'><strong>Tecan Spark plate reader</strong> (SparkControl Magellan software)</font>
+<li><font color='18BC9C'><strong>Tecan Spark plate reader</strong> (Magellan software)</font>
 <ul>
 <li><strong>Standard</strong> - direction horizontal/vertical, well data in rows/columns/matrixseparated/matrixXfluor</li>
 <li><strong>Spectrum</strong> - direction horizontal/vertical, well data in rows/columns/matrixseparated/matrixXfluor/matrixnested</li>
 <li><strong>Timecourse</strong> - direction horizontal/vertical, well data in rows/columns</li>
+</ul></li>
+<li><font color='18BC9C'><strong>Tecan Spark plate reader</strong> (SparkControl software)</font>
+<ul>
+<li><strong>Standard</strong> - (matrix format, even/uneven spacing)</li>
+<li><strong>Spectrum</strong> - (row format)</li>
+<li><strong>Timecourse</strong> - (row format)</li>
 </ul></li>
 <li><font color='18BC9C'><strong>BMG LabTech Clariostar Plus plate reader</strong> (MARS software)</font>
 <ul>
@@ -226,7 +233,9 @@ Once data extraction is complete, it labels the data with the most crucial metad
 </ul></li>
 <li><font color='18BC9C'><strong>Molecular Devices SpectraMax iD5 plate reader</strong></font>
 <ul>
-<li><strong>Standard</strong> - (matrix format)</li>
+<li><strong>Standard</strong> - (matrix format, even/uneven spacing)</li>
+<li><strong>Spectrum</strong> - (matrix format)</li>
+<li><strong>Timecourse</strong> - (matrix format, even/uneven spacing)</li>
 </ul></li>
 <li><font color='18BC9C'><strong>Beckman Coulter BioLector Microbioreactor</strong></font>
 <ul>

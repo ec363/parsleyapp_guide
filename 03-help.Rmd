@@ -47,6 +47,10 @@ Create a new spreadsheet with Excel or similar. Create a column called 'well' (c
 
 This cannot be undone, unfortunately. Reload the page and start again.
 
+**Reading names do not match up with the data in the parsed data file**
+
+If you find that your absorbance data looks like fluorescence data or vice versa, your readings may have been labelled incorrectly. This will occur if you selected Reading names in Step 2 from the Raw Data file but didn't pay attention to the order in which you selected cells. The first cell selected will label the first Reading, the second cell will label the second Reading, and so on. This is also true if you manually provided Reading names in Step 2, as well as when selecting Reading locations in Step 4 (for unevenly spaced data).
+
 <br>
 
 <!-- ##### <a name="errormessages00"> Error messages: Data upload errors </a> -->
@@ -85,9 +89,9 @@ Use the mouse to select cells in the Raw Data table to complete this section, be
 ### Error messages for Step 1: Data format {#errormessages1}
 <hr>
 
-**Error: Spectrum data must be provided in row or column format.**
+<!-- **Error: Spectrum data must be provided in row or column format.**
 
-Parsley cannot handle spectrum data in matrix format.
+Parsley cannot handle spectrum data in matrix format. -->
 
 **Error: Timecourse data must be provided in row or column format.**
 
@@ -167,6 +171,14 @@ Section 3 has been marked complete (Lock icon) without being completed.
 **Error: Reading number must be an integer of 1 or more.**
 
 Though the numeric input box accepts fractions, the app does not.
+
+**Error: Number of selected cells does not match number of readings specified.**
+
+If you have stated there are X readings, and you choose to specify reading locations by cell selection, you must select X cells to correspond to the reading locations.
+
+**Error: Selected cells should be from unique rows/columns.**
+
+When choosing to specify reading locations by cell selection, for row (or matrix)/column formatted data, each reading must result from a distinct row/column, respectively.
 
 **Error: Do not request data from outside range of file.**
 

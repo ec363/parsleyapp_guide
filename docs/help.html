@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Help | The Parsley App Guide</title>
   <meta name="description" content="A guide to using the Parsley app." />
-  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Help | The Parsley App Guide" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Eszter Csibra" />
 
 
-<meta name="date" content="2024-08-13" />
+<meta name="date" content="2024-10-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -108,6 +108,7 @@
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i>News</a>
 <ul>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#releases"><i class="fa fa-check"></i>Releases</a></li>
+<li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.1.0"><i class="fa fa-check"></i>Version 1.1.0</a></li>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.1"><i class="fa fa-check"></i>Version 1.0.1</a></li>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_1.0.0"><i class="fa fa-check"></i>Version 1.0.0</a></li>
 <li class="chapter" data-level="" data-path="news.html"><a href="news.html#id_0.2.0"><i class="fa fa-check"></i>Version 0.2.0</a></li>
@@ -172,6 +173,8 @@
 <p>Create a new spreadsheet with Excel or similar. Create a column called ‘well’ (copy/paste this exactly, similar column names will cause an error). Fill this column with ‘A1’ to ‘H12’, or as many of these as you need. Add as many other columns as you need to describe the contents of each well. Save the file as a CSV.</p>
 <p><strong>Data has been reordered due to clicking on column names in Raw Data tab</strong></p>
 <p>This cannot be undone, unfortunately. Reload the page and start again.</p>
+<p><strong>Reading names do not match up with the data in the parsed data file</strong></p>
+<p>If you find that your absorbance data looks like fluorescence data or vice versa, your readings may have been labelled incorrectly. This will occur if you selected Reading names in Step 2 from the Raw Data file but didn’t pay attention to the order in which you selected cells. The first cell selected will label the first Reading, the second cell will label the second Reading, and so on. This is also true if you manually provided Reading names in Step 2, as well as when selecting Reading locations in Step 4 (for unevenly spaced data).</p>
 <p><br></p>
 <!-- ##### <a name="errormessages00"> Error messages: Data upload errors </a> -->
 <div id="errormessages00" class="section level3 hasAnchor">
@@ -199,8 +202,9 @@
 <div id="errormessages1" class="section level3 hasAnchor">
 <h3>Error messages for Step 1: Data format<a href="help.html#errormessages1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <hr>
-<p><strong>Error: Spectrum data must be provided in row or column format.</strong></p>
-<p>Parsley cannot handle spectrum data in matrix format.</p>
+<!-- **Error: Spectrum data must be provided in row or column format.**
+
+Parsley cannot handle spectrum data in matrix format. -->
 <p><strong>Error: Timecourse data must be provided in row or column format.</strong></p>
 <p>Parsley cannot handle timecourse data in matrix format.</p>
 <p><br></p>
@@ -258,6 +262,10 @@ Select an option under the 'Channel names specification' dropdown.
 <!-- **Error: Channel number must be an integer of 1 or more.** -->
 <p><strong>Error: Reading number must be an integer of 1 or more.</strong></p>
 <p>Though the numeric input box accepts fractions, the app does not.</p>
+<p><strong>Error: Number of selected cells does not match number of readings specified.</strong></p>
+<p>If you have stated there are X readings, and you choose to specify reading locations by cell selection, you must select X cells to correspond to the reading locations.</p>
+<p><strong>Error: Selected cells should be from unique rows/columns.</strong></p>
+<p>When choosing to specify reading locations by cell selection, for row (or matrix)/column formatted data, each reading must result from a distinct row/column, respectively.</p>
 <p><strong>Error: Do not request data from outside range of file.</strong></p>
 <!-- You have requested row or column numbers that do not exist in your data. The details within the error message should help fix the problem. Probably the channel spacing number is too high. -->
 <p>You have requested row or column numbers that do not exist in your data. The details within the error message should help fix the problem. Probably the number entered for the spacing between readings is too high.</p>
